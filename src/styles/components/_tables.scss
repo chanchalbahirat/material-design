@@ -1,0 +1,17 @@
+.table-without-header {
+    .mat-header-row {
+        display: none;
+    }
+    .mat-row {
+        text-align: left;
+        td {
+            &.mat-cell {
+                border-bottom-color: transparent;
+                padding-right: 0;
+                &:first-of-type {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

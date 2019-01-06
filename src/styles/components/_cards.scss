@@ -1,0 +1,13 @@
+.cards-wrapper {
+    .mat-generic-button {
+        line-height: 60px;
+        .mat-icon {
+            height: 30px;
+            width: auto;
+            &.material-icons {
+                font-size: 30px;
+                line-height: 30px;
+            }
+        }
+    }
+}

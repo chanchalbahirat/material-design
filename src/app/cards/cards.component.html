@@ -1,0 +1,38 @@
+
+   <mat-card class="card-wrapper">
+    <mat-card-header class="justify-content-between flex-row-reverse mb-3 align-items-center">
+      <mat-card-title class="mb-0 font-weight-normal">iLite Total Project</mat-card-title>
+      <button class="bg-warning mat-raised-button mat-accent mat-generic-button">
+        <span class="mat-button-wrapper d-inline-block">
+          <mat-icon>content_copy</mat-icon>
+        </span>
+      </button>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <table mat-table [dataSource]="dataSource" class="w-100 table-without-header">
+
+            <ng-container matColumnDef="key">
+              <th mat-header-cell *matHeaderCellDef> key </th>
+              <td mat-cell *matCellDef="let element"> {{element.key}} </td>
+            </ng-container>
+          
+            <ng-container matColumnDef="value">
+              <th mat-header-cell *matHeaderCellDef> value </th>
+              <td mat-cell *matCellDef="let element"> {{element.value}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+          
+    </mat-card-content>
+    <mat-divider></mat-divider>
+    <mat-card-actions class="text-left w-100 d-flex justify-content-between pt-3 mb-0">
+      <button mat-button [matMenuTriggerFor]="menu" class="mat-raised-button">Info</button>
+      <button mat-button [matMenuTriggerFor]="menu" class="mat-raised-button">Action<mat-icon>more_vert</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="d-flex flex-row-reverse align-items-center">View Policy Details <mat-icon>assignment</mat-icon></button>
+      </mat-menu>
+    </mat-card-actions>
+  </mat-card> 
