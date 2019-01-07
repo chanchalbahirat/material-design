@@ -1,35 +1,34 @@
-<mat-card class="table-wrapper mat-elevation-z8 pr-0 pl-0">
+<mat-card class="table-wrapper mat-elevation-z8 pr-0 pl-0 mr-5 ml-5 mt-5">
   <mat-card-header class="mat-bg-primary">
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Shiba Inu</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    <mat-card-title class="mt-2">Shiba Inu</mat-card-title>
+    <mat-card-subtitle class="mat-bg-primary text-left">Dog Breed</mat-card-subtitle>
   </mat-card-header>
   
   <mat-card-content class="mb-0">
     <table mat-table [dataSource]="dataSource" class="w-100">
   
       <!-- Position Column -->
-      <ng-container matColumnDef="position">
-        <th mat-header-cell *matHeaderCellDef> No. </th>
-        <td mat-cell *matCellDef="let element" class="text-left"> {{element.position}} </td>
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef class="text-capitalize"s> Error Id. </th>
+        <td mat-cell *matCellDef="let element" class="text-left"> {{element.error_id}} </td>
       </ng-container>
   
       <!-- Name Column -->
-      <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Name </th>
-        <td mat-cell *matCellDef="let element" class="text-left"> {{element.name}} </td>
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef class="text-capitalize"> Date </th>
+        <td mat-cell *matCellDef="let element" class="text-left text-capitalize"> {{element.date}} </td>
       </ng-container>
   
       <!-- Weight Column -->
       <ng-container matColumnDef="weight">
-        <th mat-header-cell *matHeaderCellDef> Weight </th>
-        <td mat-cell *matCellDef="let element" class="text-left"> {{element.weight}} </td>
+        <th mat-header-cell *matHeaderCellDef class="text-capitalize"> Error Code </th>
+        <td mat-cell *matCellDef="let element" class="text-left text-capitalize"> {{element.error_code}} </td>
       </ng-container>
   
       <!-- Symbol Column -->
       <ng-container matColumnDef="symbol">
-        <th mat-header-cell *matHeaderCellDef> Symbol </th>
-        <td mat-cell *matCellDef="let element" class="text-left"> {{element.symbol}} </td>
+        <th mat-header-cell *matHeaderCellDef class="text-capitalize"> Message </th>
+        <td mat-cell *matCellDef="let element" class="text-left text-capitalize"> {{element.error_message}} </td>
       </ng-container>
   
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -37,6 +36,6 @@
     </table>
   </mat-card-content>
   <mat-card-actions class="mr-0 ml-0">
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+    <mat-paginator [pageSizeOptions]="[5, 1, 3]" showFirstLastButtons></mat-paginator>
   </mat-card-actions>
 </mat-card>

@@ -7,7 +7,7 @@ import {MatPaginator, MatTableDataSource} from '@angular/material';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'date', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -21,16 +21,16 @@ export class TableComponent implements OnInit {
 }
 
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  date: string;
+  error_id: number;
+  error_code: string;
+  error_message: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'}
+  {error_id: 1, date: '12 Dec, 2018', error_code: 'code', error_message: 'Message'},
+  {error_id: 2, date: '12 Dec, 2018', error_code: 'code', error_message: 'Message'},
+  {error_id: 3, date: '12 Dec, 2018', error_code: 'code', error_message: 'Message'},
+  {error_id: 4, date: '12 Dec, 2018', error_code: 'code', error_message: 'Message'},
+  {error_id: 5, date: '12 Dec, 2018', error_code: 'code', error_message: 'Message'}
 ];
