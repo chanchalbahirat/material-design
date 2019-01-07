@@ -1,10 +1,11 @@
 # Output 
 
 Material Card View :
-https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/cards.PNG
+![alt text](https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/cards.PNG)
+
 
 Material Table View :
-https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/table.PNG
+![alt text](https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/table.PNG)
 
 
 # AngularMaterial
