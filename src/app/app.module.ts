@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule, MatButtonModule, MatIconModule, MatTableModule, MatMenuModule, MatDividerModule, MatTableDataSource,MatPaginator} from '@angular/material';
+import {MatCardModule, MatButtonModule, MatIconModule, MatMenuModule, MatDividerModule, MatTableModule, MatPaginatorModule} from '@angular/material';
 import { CardsComponent } from './cards/cards.component';
 import { TableComponent } from './table/table.component';
 
@@ -22,8 +22,7 @@ import { TableComponent } from './table/table.component';
     MatTableModule,
     MatMenuModule,
     MatDividerModule,
-    MatTableDataSource,
-    MatPaginator
+    MatPaginatorModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
