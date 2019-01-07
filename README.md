@@ -1,10 +1,13 @@
 # Output 
 
-Material Card View :
+# Material Card View : 
+
 ![alt text](https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/cards.PNG)
 
 
-Material Table View :
+# Material Table View :
+
+
 ![alt text](https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/table.PNG)
 
 
