@@ -1,3 +1,12 @@
+# Output 
+
+Material Card View :
+https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/cards.PNG
+
+Material Table View :
+https://github.com/chanchalbahirat/material-design/blob/master/screen-shot/table.PNG
+
+
 # AngularMaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
