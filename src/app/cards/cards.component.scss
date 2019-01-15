@@ -1,0 +1,16 @@
+.horizontal-scroll-card {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0 15px;
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+    .cards-wrapper {
+        flex: 0 0 auto;
+    }
+    &::after {
+        content: '';
+        flex: 0 0 15px; 
+      }
+}

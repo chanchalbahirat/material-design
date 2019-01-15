@@ -23,6 +23,64 @@ export class CardsComponent implements OnInit {
 
   displayedColumns: string[] = ['key', 'value'];
   dataSource = ELEMENT_DATA;
+  list = [
+    [
+      {key: 'Contract No', value: '656565656'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '88888'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '12345'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '656565656'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '88888'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '12345'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '12345'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ],
+    [
+      {key: 'Contract No', value: '12345'},
+      {key: 'Contract Type', value: 'Term Plan'},
+      {key: 'Contract Start', value: 'Dec 24, 2018'},
+      {key: 'Contract Status', value: 'Active'},
+    
+    ]
+  ];
   constructor() { }
 
   ngOnInit() {

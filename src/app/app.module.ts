@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RouterModule, Routes} from "@angular/router";
+import {RouterModule} from "@angular/router";
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -9,11 +9,6 @@ import { CardsComponent } from './cards/cards.component';
 import { TableComponent } from './table/table.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
-// const appRoutes: Routes = [
-//   { path: '', component: CardsComponent },
-//   { path: 'cards', component: CardsComponent, data: { title: 'First Component' } },
-//   { path: 'table', component: TableComponent, data: { title: 'Second Component' } }
-// ];
 @NgModule({
   declarations: [
     AppComponent,

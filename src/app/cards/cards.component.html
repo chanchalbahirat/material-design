@@ -1,5 +1,5 @@
-
-   <mat-card class="cards-wrapper mr-5 ml-5 mt-5">
+<section class="horizontal-scroll-card d-flex pb-5">
+   <mat-card class="cards-wrapper mat-card ml-3 mr-3 mr-sm-3 ml-sm-3 mt-5" *ngFor="let item of list">
     <mat-card-header class="justify-content-between flex-row-reverse mb-3 align-items-center">
       <mat-card-title class="mb-0 font-weight-normal">iLite Total Project</mat-card-title>
       <button mat-raised-button class="mat-generic-button" color="accent">
@@ -10,7 +10,7 @@
     </mat-card-header>
     <mat-divider></mat-divider>
     <mat-card-content>
-        <table mat-table [dataSource]="dataSource" class="w-100 table-without-header">
+        <table mat-table [dataSource]="item" class="w-100 table-without-header">
 
             <ng-container matColumnDef="key">
               <th mat-header-cell *matHeaderCellDef> key </th>
@@ -42,3 +42,4 @@
       </mat-menu>
     </mat-card-actions>
   </mat-card> 
+</section>
