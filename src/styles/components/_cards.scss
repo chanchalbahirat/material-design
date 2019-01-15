@@ -1,12 +1,26 @@
-.cards-wrapper {
-    .mat-generic-button {
-        line-height: 60px;
-        .mat-icon {
-            height: 30px;
-            width: auto;
-            &.material-icons {
-                font-size: 30px;
-                line-height: 30px;
+
+.horizontal-scroll-wrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none; 
+    }
+    &::after {
+        content: '';
+        flex: 0 0 0.5rem; 
+    }
+    .cards-wrapper {
+        flex: 0 0 auto;
+        .mat-generic-button {
+            line-height: 60px;
+            .mat-icon {
+                height: 30px;
+                width: auto;
+                &.material-icons {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
             }
         }
     }
