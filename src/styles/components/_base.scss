@@ -1,4 +1,13 @@
-
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0; // Remove the margin in Firefox and Safari
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 20px;
+}
 .mat-bg-primary {
     background-color: mat-color($theme-default-primary);
     color: white;
