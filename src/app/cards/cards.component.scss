@@ -1,8 +1,9 @@
+@import '../../styles/vendors';
 .horizontal-scroll-card {
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: 0 15px;
+    padding: 0 ($grid-gutter-width/2);
     &::-webkit-scrollbar {
         display: none; 
     }
@@ -11,6 +12,6 @@
     }
     &::after {
         content: '';
-        flex: 0 0 15px; 
+        flex: 0 0 ($grid-gutter-width/2); 
       }
 }
